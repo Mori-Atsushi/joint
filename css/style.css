@@ -28,7 +28,7 @@ header h1:before {
 	position: relative;
 	margin: 0 2px;
 	top: 0.7rem; 
-	background-size:contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 }
@@ -46,7 +46,7 @@ header .menu {
 	position: absolute;
 	width: 600%;
 	height: 100%;	
-	left: -200%;
+	left: -500%;
 }
 
 .main section {
@@ -62,7 +62,7 @@ header .menu {
 
 .top .photo1 {
 	background:url(../images/top/1.jpg);
-	background-size:cover;
+	background-size: cover;
 	background-position: center center;
 }
 
@@ -77,28 +77,21 @@ header .menu {
 }
 
 .top .enter {
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border: solid 2px #aaa;
-	padding: 4px 12px;
-	position: absolute;
 	color: #f2f2f2;
 	font-size: 0.75rem;
 	bottom: 8%;
 	right: 10%;
 	font-size: 1.6rem;
-	font-weight: bold;
-	cursor: pointer;
+	padding: 4px 12px;
+	position: absolute;
 }
 
-.summary .head{
-	background:url(../images/summary.jpg);
-}
+.summary  .head{ background:url(../images/summary.jpg);  }
+.program  .head{ background:url(../images/program.jpg);  }
+.schedule .head{ background:url(../images/schedule.jpg); }
+.cast     .head{ background:url(../images/cast.jpg);     }
+.contact  .head{ background:url(../images/contact.jpg);  }
 
-.program .head{
-	background:url(../images/program.jpg);
-}
 .main .head {
 	height: 20%;
 	background-size:cover;
@@ -106,7 +99,8 @@ header .menu {
 }
 
 .main article {
-	margin: 5% 6% 0;
+	position: relative;
+	margin: 1.6rem 6% 0;
 	max-height: 72%;
 	overflow: auto;
 }
@@ -122,7 +116,6 @@ header .menu {
 }
 
 .main h2 {
-	line-height: 2rem;
 	letter-spacing: 0.1rem;
 	font-size: 1.6rem;
 	font-weight: normal;
@@ -139,27 +132,36 @@ header .menu {
 	margin-bottom: 5%;
 }
 
+.main .button {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: solid 1px #aaa;
+	cursor: pointer;
+	font-weight: bold;
+}
+
 .program .in {
 	height: 26.6666666666%;
 }
 
-.in div{
+.program p{
+	display: none;
+}
+
+.program h2 {
+	line-height: 2.2rem;	
+}
+
+.in .photo, .text{
 	height: 100%;
 	width: 50%;
 	float: left;
 }
 
-.first .photo {
-	background:url(../images/first.jpg);	
-}
-
-.second .photo {
-	background:url(../images/second.jpg);	
-}
-
-.third .photo {
-	background:url(../images/third.jpg);	
-}
+.first  .photo { background:url(../images/first.jpg);  }
+.second .photo { background:url(../images/second.jpg); }
+.third  .photo { background:url(../images/third.jpg);  }
 
 .in .photo {
 	background-size:cover;
@@ -167,5 +169,109 @@ header .menu {
 }
 
 .in hgroup {
+	height: 80%;
 	padding: 10%;
+	position: relative;
+}
+
+.in .more {
+	color: #555;
+	font-size: 1.2rem;
+	bottom: 10%;
+	right: 10%;
+	padding: 4px 8px;
+	position: absolute;
+}
+
+.schedule table {
+	width: 100%;
+}
+
+.schedule tr {
+	height: 4rem;
+}
+
+.schedule td {
+	vertical-align: baseline;
+}
+
+.schedule td:nth-child(1) {
+	width: 2.5rem;
+	text-align: center;
+}
+
+.schedule td:nth-child(2) {
+	width: 3rem;
+	text-align: center;
+}
+
+.schedule table i{
+	color: #b3b3b3;
+	position: relative;
+	top: 0.25rem;
+	font-size: 2rem;
+}
+
+.schedule .time_boder {
+	position: absolute;
+	top: 4%;
+	left: 3.78rem;
+	background-color: #b3b3b3;
+	width: 0.4rem;
+	height: 32rem;
+}
+
+.akashi .photo { background:url(../images/akashi.jpg); }
+
+.cast .photo {
+	width: 80%;
+	height: 140px;
+	margin: 1rem 10% 0.5rem;
+	float: left;
+	background-color: #333;
+	background-size:cover;
+	background-position: center center;	
+}
+
+.cast article {
+	background-color: #fafafa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.cast dt {
+	cursor: pointer;
+	border-bottom: solid 1px #ccc;
+	padding: 0.5rem 2% 0;
+}
+
+.cast dd {
+	padding: 0 2%;	
+	border-bottom: solid 1px #ccc;
+	display: none;
+}
+
+.contact input, textarea {
+	margin-bottom: 0.5rem;
+	background-color: #fafafa;
+    border: solid 1px #ccc;
+    width: 90%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.contact input {
+	padding: 2% 4%;
+}
+
+.contact textarea {
+	padding: 2% 4%;
+	line-height: 3rem;
+}
+
+.contact .send {
+	margin: 1rem 0 0;
+	display: inline-block;
+	padding: 2% 5%;
+	background-color: #fafafa;
 }
