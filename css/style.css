@@ -27,7 +27,7 @@ header h1:before {
 	height: 30px;
 	position: relative;
 	margin: 0 2px;
-	top: 0.7rem; 
+	top: 10px; 
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -36,7 +36,7 @@ header h1:before {
 header .menu {
 	position: absolute;
 	top: 0.5rem;
-	right: 8px;
+	right: 3%;
 	font-size: 2rem;
 	cursor: pointer;
 }
@@ -46,7 +46,7 @@ header .menu {
 	position: absolute;
 	width: 600%;
 	height: 100%;	
-	left: -500%;
+	left: -400%;
 }
 
 .main section {
@@ -71,9 +71,9 @@ header .menu {
 	width: 100%;
 	height: 100%;
 	background:url(../images/title.png);
-	background-size:contain;
+	background-size: auto 86%;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: 6% center;
 }
 
 .top .enter {
@@ -117,13 +117,13 @@ header .menu {
 
 .main h2 {
 	letter-spacing: 0.1rem;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 	font-weight: normal;
 	margin-bottom: 1%;
 }
 
 .main h2 span {
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 
 .main p {
@@ -150,7 +150,12 @@ header .menu {
 }
 
 .program h2 {
-	line-height: 2.2rem;	
+	font-size: 1.7rem;
+	line-height: 2rem;	
+}
+
+.program h2 span {
+	font-size: 2.7rem;
 }
 
 .in .photo, .text{
@@ -188,7 +193,7 @@ header .menu {
 }
 
 .schedule tr {
-	height: 4rem;
+	height: 5rem;
 }
 
 .schedule td {
@@ -218,36 +223,38 @@ header .menu {
 	left: 3.78rem;
 	background-color: #b3b3b3;
 	width: 0.4rem;
-	height: 32rem;
+	height: 40rem;
 }
 
 .akashi .photo { background:url(../images/akashi.jpg); }
 
-.cast .photo {
-	width: 80%;
-	height: 140px;
-	margin: 1rem 10% 0.5rem;
-	float: left;
-	background-color: #333;
-	background-size:cover;
-	background-position: center center;	
-}
-
-.cast article {
-	background-color: #fafafa;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-.cast dt {
+.cast .school {
+	height: 11.3%;
+	position: relative;
+	border-bottom: solid 1px #ccc;
 	cursor: pointer;
-	border-bottom: solid 1px #ccc;
-	padding: 0.5rem 2% 0;
 }
 
-.cast dd {
-	padding: 0 2%;	
-	border-bottom: solid 1px #ccc;
-	display: none;
+.cast .photo{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 5%;
+	height: 45px;
+	width: 45px;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.cast h2 {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	float: left;
 }
 
 .contact input, textarea {
@@ -261,17 +268,18 @@ header .menu {
 }
 
 .contact input {
-	padding: 2% 4%;
+	padding: 0.6rem 4%;
 }
 
 .contact textarea {
-	padding: 2% 4%;
-	line-height: 3rem;
+	padding: 0.6rem 4%;
+	line-height: 1.5rem;
+	height: 4.5rem;
 }
 
 .contact .send {
 	margin: 1rem 0 0;
 	display: inline-block;
-	padding: 2% 5%;
+	padding: 0.5rem 5%;
 	background-color: #fafafa;
 }

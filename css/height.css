@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+@media only screen and (min-height: 600px) {
+.contact textarea {
+	height: 7.5rem;
+}
+
+.cast .photo{
+	height: 50px;
+	width: 50px;
+}
+}
+
+@media only screen and (min-height: 650px) {
+.contact textarea {
+	height: 10.5rem;
+}
+
+.cast .photo{
+	height: 55px;
+	width: 55px;
+}
+}
+
+@media only screen and (min-height: 700px) {
+.contact textarea {
+	height: 13.5rem;
+}
+
+.cast .photo{
+	height: 60px;
+	width: 60px;
+}
+}
+
+@media only screen and (min-height: 750px) {
+.contact textarea {
+	height: 16.5rem;
+}
+
+.cast .photo{
+	height: 65px;
+	width: 65px;
+}
+}
+
+@media only screen and (min-height: 800px) {
+.contact textarea {
+	height: 19.5rem;
+}
+
+.cast .photo{
+	height: 70px;
+	width: 70px;
+}
+}

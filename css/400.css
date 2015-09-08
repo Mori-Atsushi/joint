@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+@media only screen and (min-width: 400px) {
+html, body {
+	font-size: 14px;
+}
+
+header h1{
+	margin: -5px 2%;
+}
+
+header h1:before {
+	width: 30px;
+	height: 40px;
+	position: relative;
+	margin: 0 2px;
+	top: 14px; 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+header .menu {
+	top: 0.6rem;
+}
+
+.top .enter {
+	right: 14%;
+}
+
+.contact textarea {
+	height: 4.5rem;
+}
+
+@media only screen and (min-height: 700px) {
+.contact textarea {
+	height: 7.5rem;
+}
+}
+
+@media only screen and (min-height: 750px) {
+.contact textarea {
+	height: 9rem;
+}
+}
+
+@media only screen and (min-height: 800px) {
+.contact textarea {
+	height: 12rem;
+}
+
+@media only screen and (min-height: 850px) {
+.contact textarea {
+	height: 15rem;
+}
+
+
+}
+}
